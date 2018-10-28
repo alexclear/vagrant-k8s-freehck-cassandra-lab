@@ -6,7 +6,7 @@
 	url = https://github.com/freehck/ansible-role-group-hosts-to-hosts.git
 [submodule "ansible/roles/k8s"]
 	path = ansible/roles/k8s
-	url = https://github.com/freehck/ansible-role-k8s.git
+	url = https://github.com/alexclear/ansible-role-k8s.git
 [submodule "ansible/roles/k8s-ext-storage-local-volume-provisioner"]
 	path = ansible/roles/k8s-ext-storage-local-volume-provisioner
 	url = https://github.com/kofonfor/ansible-role-k8s-ext-storage-local-volume-provisioner.git
