@@ -3,50 +3,10 @@
   roles:
     - role: local-persistent-volumes
 
-- hosts: all
-  become: yes
-  become_user: root
-  vars_files:
-    - vars/main.yml
+- hosts: k8s_cluster
+  become: true
+  any_errors_fatal: true
   roles:
-    - role: docker
-      set_registry: yes
-      registry: registry.crptech.local:80
-      tags: [master, slave, docker]
-    - role: group-hosts-to-hosts
-      group: k8s-cluster
-    - role: k8s/common
-      tags: [master, slave]
-
-- hosts: k8s-master
-  become: yes
-  become_user: root
-  vars_files:
-    - vars/main.yml
-  roles:
-    - role: k8s/master
-      tags: master
-    - role: k8s/accounts
-      tags: accounts
-
-- hosts: k8s-slaves
-  become: yes
-  become_user: root
-  vars_files:
-    - vars/main.yml
-  roles:
-    - role: k8s/slave
-      tags: slave
-
-- hosts: k8s-master
-  become: yes
-  vars:
-    - k8s_namespace: "efk"
-    - elasticsearch_helm_release: "efk"
-  roles:
-    - role: helm
-    - role: k8s-namespace
-    - role: k8s-ext-storage-local-volume-provisioner
-    - role: k8s-elasticsearch-cluster
-    - { role: k8s-fluentd-elasticsearch, fluentd_elasticsearch_helm_release: "fluentd" }
-    - { role: k8s-kibana, kibana_helm_release: "kibana" }
+    - role: freehck.k8s
+      tags:
+        - k8s
