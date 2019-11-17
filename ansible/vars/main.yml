@@ -1,9 +1,0 @@
-k8s_ip_autodetection_method: "can-reach=172.16.137.1"
-kubernetes:
-  user: kuber
-  master_ip: 172.16.137.2
-  token: pd9m27.3edpm0twe1i8s2rq
-  pod_network_cidr: 192.168.0.0/16
-  admin_conf: /etc/kubernetes/admin.conf
-  service_accounts:
-    - admin
