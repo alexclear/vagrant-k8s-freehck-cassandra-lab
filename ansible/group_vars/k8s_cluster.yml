@@ -1,4 +1,5 @@
 ---
+k8s_cassandra_operator_image_tag: "v0.4.1-release"
 k8s_ver: "1.16.2-00"
 k8s_node_ip: "{{ ansible_host }}"
 k8s_init_cidr: "10.1.0.0/16"
