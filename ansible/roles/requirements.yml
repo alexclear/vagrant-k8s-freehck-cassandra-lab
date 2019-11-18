@@ -35,7 +35,7 @@
   version: 0f7b98499fc56349b75b3aa3be46cfd7a555c9f1
   name: k8s-namespace
 - src: https://github.com/kofonfor/ansible-role-k8s-cassandra-operator.git
-  version: 3ae50e76cb4399d43f09c79dff62ced947baf84e
+  version: c63be60dad071dd8d7fd986c24b2e94fd8f46023
   name: k8s-cassandra-operator
 - src: https://github.com/kofonfor/ansible-role-k8s-rancher-local-path-provisioner.git
   version: ee105fa862ae0cc58927e587edbb4d291869bbcc
