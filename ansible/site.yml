@@ -10,3 +10,12 @@
     - role: freehck.k8s
       tags:
         - k8s
+
+- hosts: kube1
+  become: true
+  vars:
+    - k8s_namespace: "cassandra"
+    - cassandra_operator_helm_release: "cassandra-operator"
+  roles:
+    - role: k8s-namespace
+    - role: k8s-cassandra-operator

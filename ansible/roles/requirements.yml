@@ -31,3 +31,9 @@
 - src: https://github.com/freehck/ansible-role-k8s.git
   version: 8ab96a2731bd5df5c1813dab633c488f86105f21
   name: freehck.k8s
+- src: https://github.com/kofonfor/ansible-role-k8s-namespace.git
+  version: 0f7b98499fc56349b75b3aa3be46cfd7a555c9f1
+  name: k8s-namespace
+- src: https://github.com/kofonfor/ansible-role-k8s-cassandra-operator.git
+  version: 3ae50e76cb4399d43f09c79dff62ced947baf84e
+  name: k8s-cassandra-operator
