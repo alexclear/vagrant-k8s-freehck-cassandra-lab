@@ -14,3 +14,4 @@
   roles:
     - role: k8s-cassandra-operator
     - role: k8s-rancher-local-path-provisioner
+    - role: k8s-cassandracluster

@@ -40,3 +40,6 @@
 - src: https://github.com/kofonfor/ansible-role-k8s-rancher-local-path-provisioner.git
   version: ee105fa862ae0cc58927e587edbb4d291869bbcc
   name: k8s-rancher-local-path-provisioner
+- src: https://github.com/kofonfor/ansible-role-k8s-cassandracluster.git
+  version: 82e9c1d55c445063778eb84b21686db608e09e9c
+  name: k8s-cassandracluster
