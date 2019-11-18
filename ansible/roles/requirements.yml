@@ -16,8 +16,8 @@
 - src: https://github.com/freehck/ansible-role-helm.git
   version: 638cba2c5b8ed4ebc614a7dfb070fa351b4de441
   name: freehck.helm
-- src: https://github.com/freehck/ansible-role-k8s-calico.git
-  version: 50e478f7f88a688cdeac6d91bfde7eb5310dad25
+- src: https://github.com/kofonfor/ansible-role-k8s-calico.git
+  version: 0828502dd1e67126bd16ea77abf1623171dfb733
   name: freehck.k8s_calico
 - src: https://github.com/freehck/ansible-role-k8s-join.git
   version: 667c7d101260267ac3281bff85684b2a4afd6fef
