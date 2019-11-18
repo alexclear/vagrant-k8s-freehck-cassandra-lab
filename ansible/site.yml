@@ -19,3 +19,4 @@
   roles:
     - role: k8s-namespace
     - role: k8s-cassandra-operator
+    - role: k8s-rancher-local-path-provisioner

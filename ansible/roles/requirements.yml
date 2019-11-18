@@ -37,3 +37,6 @@
 - src: https://github.com/kofonfor/ansible-role-k8s-cassandra-operator.git
   version: 3ae50e76cb4399d43f09c79dff62ced947baf84e
   name: k8s-cassandra-operator
+- src: https://github.com/kofonfor/ansible-role-k8s-rancher-local-path-provisioner.git
+  version: ee105fa862ae0cc58927e587edbb4d291869bbcc
+  name: k8s-rancher-local-path-provisioner
