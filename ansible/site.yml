@@ -1,8 +1,3 @@
-- hosts: all
-  become: yes
-  roles:
-    - role: local-persistent-volumes
-
 - hosts: k8s_cluster
   become: true
   any_errors_fatal: true
