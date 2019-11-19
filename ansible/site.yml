@@ -9,9 +9,10 @@
 - hosts: kube1
   become: true
   vars:
-    - k8s_namespace: "default"
+    - k8s_namespace: "cassandra"
     - cassandra_operator_helm_release: "cassandra-operator"
   roles:
+    - role: k8s-namespace
     - role: k8s-cassandra-operator
     - role: k8s-rancher-local-path-provisioner
     - role: k8s-cassandracluster
